@@ -6,7 +6,7 @@ import javafx.beans.property.SimpleStringProperty;
 import java.time.LocalDate;
 
 /**
- * Created by nion on 1/7/2018.
+ * Created by nion and asif on 1/7/2018.
  */
 public class Bus {
     SimpleStringProperty operator;
