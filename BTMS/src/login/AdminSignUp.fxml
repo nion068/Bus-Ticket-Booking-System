@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #A9A9A9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.AdminSignUpController">
+   <children>
+      <ImageView fitHeight="510.0" fitWidth="467.0" layoutX="285.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/little-yelow.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="-1.0" layoutY="1.0" prefHeight="500.0" prefWidth="284.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <JFXTextField fx:id="manager_name" alignment="CENTER" layoutX="77.0" layoutY="127.0" promptText="Manager Name">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="contact" alignment="CENTER" layoutX="85.0" layoutY="191.0" prefHeight="25.0" prefWidth="130.0" promptText="Contact No.">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="totBus" alignment="CENTER" layoutX="85.0" layoutY="253.0" prefHeight="25.0" prefWidth="130.0" promptText="Total Bus">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="operator_name" alignment="CENTER" layoutX="59.0" layoutY="73.0" prefHeight="25.0" prefWidth="182.0" promptText="Operator Name">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="password" alignment="CENTER" layoutX="77.0" layoutY="315.0" promptText="Password">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="confirmPass" alignment="CENTER" layoutX="59.0" layoutY="384.0" prefHeight="25.0" prefWidth="182.0" promptText="Confirm Password">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="account" buttonType="RAISED" layoutX="88.0" layoutY="446.0" onAction="#newAccount" style="-fx-background-color: #21a8bc;" text="Create Account">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#0b2c40" glyphName="USER_PLUS" size="15" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <JFXButton fx:id="back" buttonType="RAISED" onAction="#back" style="-fx-background-color: #21a8bc;" text="BACK" textFill="#250101">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="MAIL_REPLY" size="16" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="exitbtn" layoutX="722.0" onAction="#exit" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: #e70b0b;" text="X" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="47.69" radius="15.19" width="15.07" />
+         </effect>
+      </JFXButton>
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="333.0" layoutY="151.0" prefHeight="64.0" prefWidth="145.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="277.0" fitWidth="276.0" layoutX="285.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/DistributorIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

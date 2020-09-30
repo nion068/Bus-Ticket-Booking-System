@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="501.0" prefWidth="800.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/bus.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="220.0" layoutY="57.0" prefHeight="249.0" prefWidth="361.0">
+         <children>
+            <Label fx:id="lblwar" alignment="CENTER" layoutX="114.0" layoutY="14.0" prefHeight="17.0" prefWidth="106.0" textFill="#d31212" />
+            <TextField fx:id="txtUser" layoutX="61.0" layoutY="44.0" prefHeight="25.0" prefWidth="258.0" promptText="Email">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="txtPassword" layoutX="61.0" layoutY="112.0" prefHeight="25.0" prefWidth="258.0" promptText="Password">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <Label layoutX="17.0" layoutY="47.0" prefHeight="17.0" prefWidth="37.0" text="Email:" textFill="#06717f">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="17.0" layoutY="115.0" prefHeight="17.0" prefWidth="37.0" text="Pass:" textFill="#06717f">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnSign" buttonType="RAISED" layoutX="238.0" layoutY="162.0" onAction="#login" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #21a8bc;" text="Sign In" textFill="#fcfafa">
+               <effect>
+                  <DropShadow height="35.83" radius="14.3875" width="23.72" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="btnReset" buttonType="RAISED" layoutX="61.0" layoutY="162.0" onAction="#reset" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #21a8bc;" text="Reset" textFill="#fcfafa">
+               <effect>
+                  <DropShadow height="29.9" radius="11.4825" width="18.03" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="admin" buttonType="RAISED" layoutX="141.0" layoutY="206.0" onAction="#adminLog" prefHeight="29.0" prefWidth="99.0" style="-fx-background-color: #21a8bc;" text="Admin Login" textFill="#fcfafa">
+               <effect>
+                  <DropShadow height="41.76" radius="18.155" width="32.86" />
+               </effect>
+            </JFXButton>
+            <FontAwesomeIconView fill="#21a8bc" glyphName="USER" layoutX="295.0" layoutY="60.0" size="14" />
+            <FontAwesomeIconView fill="#21a8bc" glyphName="UNLOCK_ALT" layoutX="295.0" layoutY="128.0" size="14" />
+            <FontAwesomeIconView fill="#0c434a" glyphName="UNDO" layoutX="69.0" layoutY="179.0" size="14" />
+            <FontAwesomeIconView fill="#0c434a" glyphName="SIGN_IN" layoutX="240.0" layoutY="179.0" size="14" />
+            <FontAwesomeIconView fill="#0c434a" glyphName="USER_SECRET" layoutX="142.0" layoutY="225.0" size="16" />
+            <FontAwesomeIconView glyphName="EXPEDITEDSSL" layoutX="175.0" layoutY="24.0" size="30" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="275.0" layoutY="26.0" prefHeight="30.0" prefWidth="268.0" text="Welcome to BTMS" textFill="#343b43">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="hyperlink" layoutX="575.0" layoutY="440.0" onAction="#hype" prefHeight="29.0" prefWidth="188.0" style="-fx-background-color: #21a8bc;" text="FORGOT YOUR PASSWORD???" textFill="#c61010" underline="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView fill="#0c434a" glyphName="EXTERNAL_LINK" size="15" />
+         </graphic>
+      </Hyperlink>
+      <JFXButton fx:id="btnSign2" buttonType="RAISED" layoutX="84.0" layoutY="447.0" onAction="#signUp" prefHeight="29.0" prefWidth="143.0" style="-fx-background-color: #21a8bc;" text="Create new Account" textFill="#fcfafa">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="21.01" radius="7.0375000000000005" width="9.14" />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView fill="#0c434a" glyphName="USER_PLUS" size="14" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="exitbtn" layoutX="770.0" onAction="#exit" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: #e70b0b;" text="X" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="47.69" radius="15.19" width="15.07" />
+         </effect>
+      </JFXButton>
+      <Label fx:id="labelHype" alignment="CENTER" layoutX="527.0" layoutY="382.0" prefHeight="41.0" prefWidth="258.0" textFill="#400806">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

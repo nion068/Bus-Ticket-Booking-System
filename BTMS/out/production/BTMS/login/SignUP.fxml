@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="780.0" style="-fx-background-color: #A9A9A9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.SignUPController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="467.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/little-yelow22.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <JFXButton fx:id="exit" layoutX="751.0" layoutY="-1.0" onAction="#exit" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: #e70b0b;" text="X" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="47.69" radius="15.19" width="15.07" />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="submit" buttonType="RAISED" layoutX="606.0" layoutY="373.0" onAction="#signUp" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #21a8bc;" text="Submit" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="47.69" radius="15.19" width="15.07" />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView glyphName="HAND_POINTER_ALT" size="15" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="back" layoutX="-1.0" onAction="#back" style="-fx-background-color: #21a8bc;" text="BACK" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="47.69" radius="15.19" width="15.07" />
+         </effect>
+         <graphic>
+            <FontAwesomeIconView glyphName="MAIL_REPLY" />
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="name" alignment="CENTER" layoutX="528.0" layoutY="75.0" prefHeight="25.0" prefWidth="239.0" promptText="enter your name" />
+      <JFXTextField fx:id="gender" alignment="CENTER" layoutX="583.0" layoutY="114.0" prefHeight="25.0" prefWidth="119.0" promptText="gender" />
+      <JFXTextField fx:id="address" alignment="CENTER" layoutX="574.0" layoutY="150.0" promptText="enter your address" />
+      <JFXTextField fx:id="mobno" alignment="CENTER" layoutX="547.0" layoutY="191.0" prefHeight="25.0" prefWidth="189.0" promptText="enter your mobile number" />
+      <JFXTextField fx:id="email" alignment="CENTER" layoutX="575.0" layoutY="229.0" promptText="enter your email" />
+      <JFXTextField fx:id="pass" alignment="CENTER" layoutX="558.0" layoutY="268.0" prefHeight="25.0" prefWidth="170.0" promptText="enter your password" />
+      <JFXTextField fx:id="confirm" alignment="CENTER" layoutX="528.0" layoutY="314.0" prefHeight="25.0" prefWidth="239.0" promptText="confirm your password" />
+      <FontAwesomeIconView glyphName="USER_PLUS" layoutX="624.0" layoutY="39.0" size="30" />
+       
+   </children>
+   <effect>
+      <InnerShadow height="29.9" radius="15.19" width="32.86" />
+   </effect>
+</AnchorPane>

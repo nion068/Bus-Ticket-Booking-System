@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" prefHeight="250.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <children>
+        <Label layoutX="74.0" layoutY="63.0" text="Username" />
+        <Label layoutX="74.0" layoutY="125.0" text="Password" />
+        <TextField fx:id="userText" layoutX="169.0" layoutY="58.0" />
+        <PasswordField fx:id="passwordText" layoutX="169.0" layoutY="120.0" />
+        <ButtonBar layoutX="137.0" layoutY="193.0" prefHeight="40.0" prefWidth="200.0">
+            <buttons>
+                <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetAction" text="Reset" />
+                <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginAction" text="Login" />
+            </buttons>
+        </ButtonBar>
+      <Button fx:id="signUpButton" layoutX="85.0" layoutY="201.0" mnemonicParsing="false" onAction="#signUp" text="Sign Up" />
+      <JFXButton fx:id="adminButton" layoutX="318.0" layoutY="14.0" onAction="#adminClicked" text="Admin" />
+    </children>
+</AnchorPane>

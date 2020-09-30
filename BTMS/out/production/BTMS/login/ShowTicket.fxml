@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.ShowTicketController">
+   <children>
+      <Label layoutX="47.0" layoutY="49.0" text="Ticket Id : " />
+      <Label fx:id="ticket_id" layoutX="119.0" layoutY="49.0" text="Label" />
+      <Label layoutX="133.0" layoutY="100.0" text="Customer Name : " />
+      <Label fx:id="userName" layoutX="251.0" layoutY="100.0" text="Label" />
+      <Label layoutX="133.0" layoutY="132.0" text="Starting Point : " />
+      <Label layoutX="133.0" layoutY="161.0" text="Destination :" />
+      <Label layoutX="133.0" layoutY="192.0" text="Journey Date :" />
+      <Label layoutX="135.0" layoutY="221.0" text="Operator Name : " />
+      <Label layoutX="136.0" layoutY="249.0" text="Bus Model :" />
+      <Label layoutX="136.0" layoutY="279.0" text="Booked Seats : " />
+      <Label layoutX="136.0" layoutY="330.0" text="Boarding Point :" />
+      <Label fx:id="from" layoutX="251.0" layoutY="132.0" text="Label" />
+      <Label fx:id="to" layoutX="251.0" layoutY="164.0" text="Label" />
+      <Label fx:id="date" layoutX="251.0" layoutY="192.0" text="Label" />
+      <Label fx:id="operator" layoutX="251.0" layoutY="221.0" text="Label" />
+      <Label fx:id="model" layoutX="251.0" layoutY="249.0" text="Label" />
+      <Label fx:id="seat" layoutX="251.0" layoutY="279.0" text="Label" />
+      <Label fx:id="boarding" layoutX="251.0" layoutY="330.0" text="Label" />
+      <JFXButton fx:id="bookAgain" buttonType="RAISED" layoutX="473.0" layoutY="361.0" onAction="#bookAgainClicked" style="-fx-background-color: #21a8bc;" text="Book Again" />
+      <Label layoutX="136.0" layoutY="307.0" text="Fare : " />
+      <Label fx:id="fare" layoutX="251.0" layoutY="305.0" text="Label" />
+      <ImageView fitHeight="166.0" fitWidth="218.0" layoutX="428.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/logo_bus.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="getPdf" buttonType="RAISED" layoutX="373.0" layoutY="361.0" onAction="#getPdfClicked" style="-fx-background-color: #21a8bc;" text="Get PDF" />
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>
